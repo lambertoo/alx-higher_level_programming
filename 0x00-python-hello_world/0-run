@@ -1,10 +1,8 @@
-#!/bin/bash
+#!/usr/bin/python3
 
-# Check if the PYFILE environment variable is set
-if [ -z "$PYFILE" ]; then
-    echo "PYFILE environment variable is not set."
-    exit 1
-fi
+def print_best_school():
+    """Prints 'Best School'."""
+    print("Best School")
 
-# Run the Python script
-python3 "$PYFILE"
+if __name__ == "__main__":
+    print_best_school()
