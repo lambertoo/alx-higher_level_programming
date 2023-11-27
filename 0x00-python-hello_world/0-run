@@ -1,11 +1,7 @@
 #!/bin/bash
 
-# Check if the PYFILE environment variable is set
-if [ -z "$PYFILE" ]; then
-    echo "Best School"
-    exit 1
-fi
-
-# Run the Python script
+# Run Python script specified by the environment variable $PYFILE
 python3 "$PYFILE"
 
+# Check Python script for code style compliance using pycodestyle
+pycodestyle "$PYFILE"
