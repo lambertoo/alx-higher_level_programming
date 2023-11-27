@@ -1,7 +1,3 @@
 #!/bin/bash
-
-# Run Python script specified by the environment variable $PYFILE
 python3 "$PYFILE"
 
-# Check Python script for code style compliance using pycodestyle
-pycodestyle "$PYFILE"

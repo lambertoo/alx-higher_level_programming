@@ -1,13 +1,2 @@
 #!/bin/bash
-
-# Save Python code to a temporary file
-echo "$PYCODE" > temp_code.py
-
-# Run Python code from the temporary file
-python3 temp_code.py
-
-# Check Python code for code style compliance using pycodestyle
-pycodestyle temp_code.py
-
-# Remove temporary file
-rm temp_code.py
+python3 -c "@PYCODE"
