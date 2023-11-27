@@ -1,8 +1,11 @@
-#!/usr/bin/python3
+#!/bin/bash
 
-def print_best_school():
-    """Prints 'Best School'."""
-    print("Best School")
+# Check if the PYFILE environment variable is set
+if [ -z "$PYFILE" ]; then
+    echo "Best School"
+    exit 1
+fi
 
-if __name__ == "__main__":
-    print_best_school()
+# Run the Python script
+python3 "$PYFILE"
+
